@@ -6,9 +6,9 @@ public static class EffectsCatalog
 {
     public static void BounceEffect(GameObject obj)
     {
-        obj.transform.DOMoveY(obj.transform.position.y + 10, 0.125f).SetEase(Ease.OutQuad).OnComplete(() =>
+        obj.transform.DOMoveY(obj.transform.position.y + 3, 0.125f).SetEase(Ease.OutQuad).OnComplete(() =>
         {
-            obj.transform.DOMoveY(obj.transform.position.y - 10, 0.125f).SetEase(Ease.InQuad);
+            obj.transform.DOMoveY(obj.transform.position.y - 3, 0.125f).SetEase(Ease.InQuad);
         });
     }
 
@@ -24,7 +24,7 @@ public static class EffectsCatalog
 
     public static void ShakeEffect(GameObject obj)
     {
-        obj.transform.DOShakePosition(0.3f, new Vector3(4, 0), 100);
+        obj.transform.DOShakePosition(0.3f, new Vector3(6, 0), 100);
     }
 
     public static void RotateEffect(GameObject obj)

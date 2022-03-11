@@ -23,6 +23,7 @@ public class AnswerController : MonoBehaviour
 
         isRight = isRightValue;
         image.sprite = answerImage;
+        image.preserveAspect = true;
         background.color = backgroundColor;
 
         if (isNeedToAnimate)
